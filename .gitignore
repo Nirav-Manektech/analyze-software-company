@@ -1,0 +1,6 @@
+scripts
+include
+Lib
+.vscode
+pyvenv.cfg
+.idea
