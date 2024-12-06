@@ -1,6 +1,6 @@
-scripts
+.vscode
 include
 Lib
-.vscode
+Scripts
 pyvenv.cfg
 .idea
