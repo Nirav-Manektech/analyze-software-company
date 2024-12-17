@@ -1,0 +1,51 @@
+isSoftwareCompany,keywordList,isError,ErrorMessage,website
+False,,True,"(MaxRetryError('HTTPSConnectionPool(host=\'www.-lines.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x0000029CB13D4C80>: Failed to resolve \'www.-lines.com\' ([Errno 11001] getaddrinfo failed)""))'),)",https://www.-lines.com
+False,,False,,http://www.0-to-9.nl
+False,,False,,http://www.001.co.za
+False,,True,"('403 Client Error: Forbidden for url: https://00f.agency/',)",https://00f.agency
+False,,False,,http://www.010.co.il
+False,,False,,http://www.0101design.com
+False,,True,"('403 Client Error: Forbidden for url: https://01bit.it/',)",https://01bit.it
+True,IT services,False,,https://www.01computer.com
+True,CRM,False,,https://www.01rabbit.it
+False,,False,,https://www.01s.it
+False,,False,,http://www.01solutions.gr
+True,web development,False,,https://www.02100.com
+False,,False,,https://035media.se
+True,CRM,False,,http://www.03webdesign.nl
+False,,False,,http://www.040.se
+False,,False,,https://www.04academy.com
+False,,False,,https://www.050media.nl
+False,,False,,https://www.052b.pl
+False,,False,,https://0to5.com
+False,,False,,https://0x.org
+True,digital transformation,False,,https://www.1-more-thing.com
+False,,False,,http://www.1-stop.com
+False,,False,,https://www.1-stopmedia.com
+False,,False,,http://www.1-vormatie.nl
+False,,False,,https://100.nl
+False,,False,,https://home.1000grad.de
+False,,False,,https://www.1000grad.de
+True,software development,False,,https://1000i.pl
+False,,False,,https://www.1001frucht.de
+False,,False,,https://www.1001gewuerze.de
+True,mobile app,False,,https://100grams.nl
+False,,False,,https://www.100it.be
+False,,False,,https://100leiden.nl
+False,,False,,http://www.100mphmedia.com
+False,,False,,https://100ms.live
+False,,False,,https://100percenthelpdesk.com
+False,,False,,https://www.100procent.com
+False,,False,,http://100procenthilde.nl
+True,CRM,False,,https://www.100worte.de
+True,web development,False,,http://100wunder.de
+False,,False,,http://www.101.at
+False,,False,,http://www.1010consultancy.co.za
+True,web development,False,,http://www.1010media.co.uk
+False,,True,"(MaxRetryError(""HTTPSConnectionPool(host='www.1011i.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))""),)",http://www.1011i.com
+False,,False,,http://www.101design.com.au/
+False,,False,,http://www.101digital.co.za
+False,,True,"(MaxRetryError('HTTPSConnectionPool(host=\'101management.net\', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for \'101management.net\'. (_ssl.c:1000)"")))'),)",https://101management.net
+False,,False,,http://www.101netsolutions.com
+False,,False,,http://www.101ways.com
+True,mobile app,False,,http://www.1021.co.za

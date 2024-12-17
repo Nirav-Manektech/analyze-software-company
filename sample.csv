@@ -1,0 +1,51 @@
+isSoftwareCompany,keywordList,isError,ErrorMessage,website
+False,,True,"(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')),)",http://www.xdensity.com
+True,"software development, mobile app",False,,https://doc4design.com
+False,,False,,https://www.webdesignsarizona.com
+False,,False,,http://ikondesign.com.au
+False,,False,,https://nesolu.ch
+False,,True,"(MaxRetryError(""HTTPConnectionPool(host='expertwebdesign.net', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001A71EBED7F0>, 'Connection to expertwebdesign.net timed out. (connect timeout=10)'))""),)",http://expertwebdesign.net
+False,,False,,https://on-projects.de
+False,,False,,https://www.machbar.de
+False,,False,,http://dego.lv
+False,,False,,https://b-r.com
+False,,False,,https://rocketshipapps.com
+False,,False,,http://www.visualys.eu
+False,,False,,http://www.origin.uk.com
+False,,False,,http://www.russellbenzing.com
+False,,True,"('403 Client Error: Forbidden for url: http://www.empirxhealth.com/',)",http://www.empirxhealth.com
+False,,False,,http://www.imagenad.com
+True,"ERP, web development",False,,https://www.communicraft.com
+False,,False,,https://stackmatix.com
+True,CRM,False,,https://www.intergic.com
+False,,True,"('406 Client Error: Not Acceptable for url: https://www.svend.com/',)",https://www.svend.com
+False,,False,,http://hillmediagroup.com
+False,,False,,https://www.uneekz.net
+False,,False,,https://status.im
+True,"software development, web development",False,,http://www.aspiringwebdesign.com
+False,,True,"('403 Client Error: Forbidden for url: http://hostagent.net/',)",http://hostagent.net/
+False,,False,,https://www.digitalstory.pl
+False,,False,,http://airnest.com
+False,,True,"('403 Client Error: Forbidden for url: https://mycpsolutions.com/',)",https://mycpsolutions.com
+False,,True,"('403 Client Error: Forbidden for url: https://tinuiti.com/',)",https://tinuiti.com
+False,,False,,http://www.emanio.se
+False,,True,"('403 Client Error: Forbidden for url: http://www.geoinfo.dk/',)",http://www.geoinfo.dk
+False,,False,,https://primedigital.co
+False,,False,,https://www.navitasmarketing.com
+False,,True,"('403 Client Error: Forbidden for url: https://www.space48.com/',)",https://www.space48.com
+False,,False,,http://www.firebellymarketing.com/
+False,,True,"(MaxRetryError(""HTTPSConnectionPool(host='www.conpark.de', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))""),)",http://conpark.de
+False,,False,,https://www.gomogroup.com
+False,,False,,https://www.pierraa-group.de
+False,,False,,https://www.emtensor.com
+False,,False,,https://www.jamimos.com
+False,,False,,https://www.yankeepr.com
+True,"ERP, CRM, digital transformation",False,,https://www.businessconfig.com
+False,,False,,https://www.sinaps.ro
+True,mobile app,False,,http://www.appxone.com
+False,,False,,https://www.shift-technology.com
+False,,True,"('403 Client Error: Forbidden for url: https://www.lhpinc.com/',)",https://www.lhpinc.com
+False,,True,"('412 Client Error: Precondition Failed for url: https://visualiswebdesign.com/',)",https://visualiswebdesign.com
+False,,False,,http://www.nova-box.com
+False,,False,,http://backboneradio.com
+False,,False,,https://www.trekmedics.org

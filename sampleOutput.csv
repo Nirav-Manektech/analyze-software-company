@@ -1,0 +1,51 @@
+Unnamed: 0,isSoftwareCompany,keywordList,isError,ErrorMessage,website
+0,True,"web, design, development",False,,http://www.mackcommunications.com
+1,True,"web, design, development",False,,http://targetmarketingsol.com
+2,True,design,False,,http://www.neoxphere.com
+3,True,"web development, web, design, development",False,,http://eggsmedia.com
+4,False,,True,"('403 Client Error: Forbidden for url: https://www.techsanmedia.com/',)",https://www.techsanmedia.com
+5,True,"web, development",False,,http://softwarefx.com
+6,True,"web development, web, design, development",False,,https://ffrwd.co.za
+7,True,"web, design",False,,https://photographicdesign.eu
+8,False,,False,,https://www.finke.media
+9,False,,False,,https://www.canvsart.com
+10,False,,False,,https://www.yourheights.com
+11,False,,False,,https://threefourteen.io
+12,False,,True,"('403 Client Error: Forbidden for url: https://www.fatpromotions.co.uk/',)",http://www.fatpromotions.co.uk
+13,True,"web, design, development",False,,https://www.netbyte.com
+14,True,"mobile app, CRM, digital transformation, web, design",False,,https://www.momacomunicazione.it
+15,False,,False,,http://cargas.com
+16,False,,True,"('403 Client Error: Forbidden for url: https://shieldsafety.co.uk/',)",https://shieldsafety.co.uk
+17,False,,True,"('403 Client Error: Forbidden for url: https://smithhousedesign.com/',)",https://smithhousedesign.com
+18,True,"web development, web, design, development",False,,http://www.pig.works
+19,False,,False,,https://www.eixen-immobilien.de
+20,True,"mobile app, web development, web, design, development",False,,http://www.goodwebdesignco.com.au/
+21,False,,True,"(MaxRetryError('HTTPSConnectionPool(host=\'avotum.de\', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for \'avotum.de\'. (_ssl.c:1000)"")))'),)",https://avotum.de
+22,False,,False,,https://www.infinitewebsitedesign.com
+23,False,,True,"('403 Client Error: Forbidden for url: https://drioduo.com/',)",https://drioduo.com
+24,False,,False,,http://www.blackcompass.net
+25,True,web,False,,http://www.spell.com.tr
+26,True,"web, design, development",False,,https://sartorseven.com
+27,False,,True,"('403 Client Error: Forbidden for url: https://trading-point.net/',)",https://trading-point.net
+28,True,"web, design, development",False,,https://designopoly.co.uk
+29,False,,False,,https://www.protip.de
+30,False,,True,"(MaxRetryError(""HTTPSConnectionPool(host='brainbeanapps.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)')))""),)",https://brainbeanapps.com
+31,False,,True,"('403 Client Error: Forbidden for url: http://www.gophergo.io/',)",http://www.gophergo.io
+32,True,"web, design, development",False,,http://electricstores.com/
+33,True,"web development, web, design, development",False,,http://www.dmhgraphics.com
+34,True,"software development, web development, web, design, development",False,,https://www.equteq.com
+35,True,"web development, web, design, development",False,,http://gistcreate.com
+36,True,"web development, web, design, development",False,,http://www.flipsarl.com
+37,False,,False,,https://www.imanox.de
+38,True,"web development, web, design, development",False,,http://onestopcreates.com
+39,False,,False,,https://pleasantsoft.com
+40,True,"web, design, development",False,,http://www.nitrousgraphics.com.au
+41,False,,False,,https://www.anisans.com
+42,False,,False,,https://www.singleframe.co.uk
+43,True,"web, design, development",False,,https://thisiswolf.com
+44,True,"software development, web, design, development",False,,https://symatechlabs.com
+45,False,,False,,http://ssp-gmbh.com
+46,False,,False,,http://blondish.net
+47,True,"web, design",False,,http://www.aqua-creative.com
+48,False,,False,,https://www.nicolaudie.com
+49,True,"web development, web, design, development",False,,https://www.select-interactive.com/
