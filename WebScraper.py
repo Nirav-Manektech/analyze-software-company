@@ -3,6 +3,8 @@ from tkinter import filedialog, messagebox, ttk
 import pandas as pd
 import os
 from main import check_url_for_software_dev_company
+import threading
+
 
 # Main Application Class
 class WebScraperTool:
@@ -12,8 +14,10 @@ class WebScraperTool:
         self.root.geometry("600x450")
         self.file_path = None
         self.csv_file_path = None
-        self.dict1 = []
+        self.results = []
         self.is_paused = False
+        self.is_running = False
+        self.scraping_thread = None
 
         # UI Setup
         self.create_widgets()
@@ -45,9 +49,9 @@ class WebScraperTool:
         self.pause_button.grid(row=0, column=1, padx=5)
 
         self.clear_button = tk.Button(button_frame, text="Clear", command=self.clear_ui)
-        self.clear_button.grid(row=0, column=1, padx=5)
+        self.clear_button.grid(row=0, column=2, padx=5)
 
-        self.download_button = tk.Button(button_frame, text="Download Log", command=self.download_log)
+        self.download_button = tk.Button(button_frame, text="Download Excel", command=self.download_log)
         self.download_button.grid(row=0, column=3, padx=5)
 
         # Status Box
@@ -91,26 +95,37 @@ class WebScraperTool:
             messagebox.showerror("Error", "CSV file not found!")
             return
 
+        if self.is_running:
+            messagebox.showwarning("Warning", "Scraping is already in progress!")
+            return
+
+        self.is_running = True
+        self.scraping_thread = threading.Thread(target=self.run_scraping, daemon=True)
+        self.scraping_thread.start()
+
+    def run_scraping(self):
         try:
-            # Example Script Iterating CSV Rows
             self.log_status("Starting scraping process...")
             df = pd.read_csv(self.csv_file_path)
             total_rows = len(df)
-            # data = get_data()
 
             for i, row in df.iterrows():
+                while self.is_paused:
+                    self.log_status("Paused... waiting to resume")
+                    self.root.after(100)
+
+                if not self.is_running:
+                    break
+
                 url = row.get("Website", None)
-                if self.is_paused: break
                 if url:
-                    # Simulated scraping operation
-                    # result = self.simulated_scraping(url)
                     result = check_url_for_software_dev_company(url)
                     result["website"] = url
-                    self.dict1.append(result)
-                    self.log_status(f"Scraping site: {url} - {result["website"]}")
+                    self.results.append(result)
+                    self.log_status(f"Scraping site: {url} - {result['website']}")
                 else:
                     self.log_status("Empty URL found, skipping...")
-                # Update progress bar
+
                 self.progress["value"] = (i + 1) / total_rows * 100
                 self.root.update_idletasks()
 
@@ -118,14 +133,18 @@ class WebScraperTool:
         except Exception as e:
             messagebox.showerror("Error", f"Error in script execution: {e}")
             self.log_status(f"Error: {e}")
+        finally:
+            self.is_running = False
 
-    # Simulated Scraping Function
-    def simulated_scraping(self, url):
-        if "example.com" in url:
-            return "Success"
-        elif "example1.com" in url:
-            return "Getting 401 while scraping"
-        return "Failed"
+    # Pause/Resume script functionality
+    def pause_script(self):
+        if not self.is_running:
+            messagebox.showwarning("Warning", "No scraping process to pause!")
+            return
+
+        self.is_paused = not self.is_paused
+        self.pause_button.config(text="Resume" if self.is_paused else "Pause")
+        self.log_status("Scraping paused..." if self.is_paused else "Scraping resumed...")
 
     # Function to log messages in the status box
     def log_status(self, message):
@@ -146,35 +165,25 @@ class WebScraperTool:
         self.status_text.delete(1.0, tk.END)
         self.status_text.config(state="disabled")
         self.log_status("Cleared previous data!")
-        self.dict1 = []
+        self.results = []
+        self.is_running = False
+        self.is_paused = False
 
-    # Pause script functionality
-    def pause_script(self):
-        if not self.is_paused:
-            self.is_paused = True
-            self.pause_button.config(text="Resume")
-            self.log_status("Scraping paused...")
-        else:
-            self.is_paused = False
-            self.pause_button.config(text="Pause")
-            self.log_status("Scraping resumed...")
-
+    # Download Log Functionality
     def download_log(self):
-        log_content = len(self.dict1)
-        if not log_content:
+        if not self.results:
             messagebox.showwarning("Warning", "No log data to download!")
             return
-        self.pause_script()
-        file_path = filedialog.asksaveasfilename(defaultextension=".xslx", filetypes=[("Text Files", "*.xslx")])
+
+        file_path = filedialog.asksaveasfilename(defaultextension=".xlsx", filetypes=[("Excel Files", "*.xlsx")])
         if file_path:
             try:
-                df = pd.DataFrame(self.dict1)
-                df.to_excel("sampleOutput.xlsx")
-                # with open(file_path, "w") as file:
-                #     file.write(log_content)
-                messagebox.showinfo("Success", "File downloaded successfully!")
+                df = pd.DataFrame(self.results)
+                df.to_excel(file_path, index=False)
+                messagebox.showinfo("Success", "Log file downloaded successfully!")
             except Exception as e:
                 messagebox.showerror("Error", f"Failed to download file: {e}")
+
 
 # Run the Application
 if __name__ == "__main__":
